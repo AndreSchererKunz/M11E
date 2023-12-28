@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: Roboto, sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+
+.container,
+.produtos {
+    max-width: 738px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container h1 {
+    font-size: 28px;
+    font-style: italic;
+}
+
+header {
+    padding: 8px 0;
+    background-color: rgb(241, 204, 134);
+    color: white;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 1em;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.store-front {
+    width: 250px;
+    height: 200px;
+    margin-top: 25px;
+    max-width: 100%;
+}
+
+.container h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgb(241, 204, 134);
+    padding-bottom: 10px;
+}
+
+.container p {
+    font-size: 0.8em;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+}
+
+.container h2 {
+    padding-left: 25px;
+}
+
+hr {
+    margin-left: 25px;
+    border: 1px solid rgb(241, 204, 134);
+}
+
+.sub-titulo > h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    color: rgb(241, 204, 134);
+    margin-top: 40px;
+}
+
+.sub-titulo hr {
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.produto h2,
+.produto-2 h2 {
+    font-size: 1.2em;
+    max-width: 160px;
+    word-wrap: break-word;
+}
+
+.produto p,
+.produto-2 p {
+    font-size: 0.8em;
+    max-width: 160px;
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.produto {
+    padding-right: 32px;
+}
+
+.produto img,
+.produto-2 img {
+    width: 100%;
+    width: 160px;
+    height: 160px;
+}
+
+button {
+    padding: 3px 16px;
+    border: none;
+    color: white;
+    background-color: rgb(241, 204, 134);
+}
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1023px){
+    .container,
+    .produtos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container,
+    .produtos{
+    max-width: 90%;
+    }
+
+    .titulo {
+        flex-direction: inherit;
+    }
+
+    nav {
+        margin-top: 7px;
+    }
+
+    .produtos {
+        margin-left: 20px;
+    }
+
+    header {
+        width: 107%;
+        display: flex;
+        align-items: normal;
+    }
+
+    #about,
+    #products {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .store-front {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    .container h2,
+    .container hr,
+    .container p {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .produto,
+    .produto-2 {
+        padding: 0;
+        width: 100%;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .produto img,
+    .produto-2 img {
+        width: 100%;
+        height: 160px;
+    }
+
+    .produto h2,
+    .produto p,
+    .produto-2 h2,
+    .produto-2 p {
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .artigos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .produto button,
+    .produto-2 button {
+        width: 93%;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 341px) {
+    nav {
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width: 641px)  and (max-width: 1023px) {
+    .produto,
+    .produto-2 {
+        width: calc(50% - 16px);
+    }
+}
